@@ -1,5 +1,5 @@
 dependencies:
-- name: zeebe-k8s-full-helm
+- name: zeebe-cluster-k8s-helm
   version: 0.0.24
   repository: http://jenkins-x-chartmuseum:8080
 - name: zeebe-operate-k8s-helm
