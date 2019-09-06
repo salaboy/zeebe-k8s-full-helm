@@ -1,2 +1,2 @@
-# zeebe-kubernetes-helm
-Zeebe Kubernetes HELM Chart
+# zeebe-cluster-helm
+Zeebe Cluster HELM Chart
