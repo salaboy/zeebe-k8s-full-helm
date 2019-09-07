@@ -1,7 +1,8 @@
 # Default values for zeebe-k8s-full-helm.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-zeebe: "{{ .Release.Name }}-zeebe-cluster-k8s-helm"
+zeebe-operate-k8s-helm:
+  zeebe: "{{ .Release.Name }}-zeebe-cluster-k8s-helm"
 zeebe-cluster-k8s-helm: 
   kibana: 
     healthCheckPath: "/logs/app/kibana"
@@ -12,6 +13,7 @@ zeebe-cluster-k8s-helm:
         value: "true"
     ingress:
       enabled: true
+      host: ""
       path: /logs
       annotations:
         kubernetes.io/ingress.class: nginx
