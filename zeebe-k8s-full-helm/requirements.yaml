@@ -5,4 +5,7 @@ dependencies:
 - name: zeebe-operate-k8s-helm
   version: 0.0.11
   repository: http://jenkins-x-chartmuseum:8080
+- name: nginx-ingress
+  version: 1.19.0
+  repository: https://kubernetes-charts.storage.googleapis.com
   

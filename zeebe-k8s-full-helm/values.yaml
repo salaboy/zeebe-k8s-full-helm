@@ -1,4 +1,11 @@
 # Default values for zeebe-k8s-full-helm.
 # This is a YAML-formatted file.
 # Declare variables to be passed into your templates.
-zeebe: ${}
+zeebe: {{ include "zeebe-cluster-k8s-helm.fullname" . }}
+zeebe-cluster-k8s-helm: 
+  kibana: 
+    extraEnvs:
+      - name: SERVER_BASEPATH
+        value: /logs
+      - name: SERVER_REWRITEBASEPATH
+        value: "true"
