@@ -9,7 +9,7 @@ zeebe-k8s-full-helm:
     ingress:
       enabled: true
       hosts:
-        - "*"
+        - ""
       path: /logs
       annotations:
         kubernetes.io/ingress.class: nginx
