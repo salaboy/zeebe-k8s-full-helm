@@ -14,5 +14,5 @@ zeebe-k8s-full-helm:
       annotations:
         kubernetes.io/ingress.class: nginx
 zeebe-operate-k8s-helm:
-  zeebe: '{{ template "zeebe-release" . }}-zeebe-k8s-full-helm'
+  zeebe: '{{ Release.Name }}-zeebe-k8s-full-helm'
 

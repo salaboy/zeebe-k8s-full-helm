@@ -16,6 +16,7 @@ setup: init
 build: clean setup
 	helm dependency build zeebe-k8s-full-helm
 	helm lint zeebe-k8s-full-helm
+	helm template zeebe-k8s-full-helm
 
 install: clean build
 	helm upgrade ${NAME} zeebe-k8s-full-helm --install
