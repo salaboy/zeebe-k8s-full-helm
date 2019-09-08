@@ -3,7 +3,7 @@ zeebe-cluster-k8s-helm:
     healthCheckPath: "/logs/app/kibana"
     ingress:
       enabled: false
-      annotations: {}
+      annotations:
         kubernetes.io/ingress.class: nginx
       path: /logs
       hosts:
