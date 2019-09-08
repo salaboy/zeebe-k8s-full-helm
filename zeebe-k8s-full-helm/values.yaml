@@ -13,8 +13,6 @@ zeebe-cluster-k8s-helm:
         value: /logs
       - name: SERVER_REWRITEBASEPATH
         value: "true"
-      annotations:
-        kubernetes.io/ingress.class: nginx
 zeebe-operate-k8s-helm:
   zeebe: "{{ .Release.Name }}-zeebe-cluster-k8s-helm"
 
