@@ -1,3 +1,5 @@
+global:
+  zeebe: "{{ .Release.Name }}-zeebe-cluster-k8s-helm"
 zeebe-cluster-k8s-helm: 
   kibana: 
     healthCheckPath: "/logs/app/kibana"
@@ -13,6 +15,4 @@ zeebe-cluster-k8s-helm:
         value: /logs
       - name: SERVER_REWRITEBASEPATH
         value: "true"
-zeebe-operate-k8s-helm:
-  zeebe: "{{ .Release.Name }}-zeebe-cluster-k8s-helm"
 

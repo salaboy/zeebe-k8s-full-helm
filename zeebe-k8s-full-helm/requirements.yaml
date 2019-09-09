@@ -3,7 +3,7 @@ dependencies:
   version: 0.0.24
   repository: http://jenkins-x-chartmuseum:8080
 - name: zeebe-operate-k8s-helm
-  version: 0.0.13
+  version: 0.0.15
   repository: http://jenkins-x-chartmuseum:8080
 - name: nginx-ingress
   version: 1.19.0
